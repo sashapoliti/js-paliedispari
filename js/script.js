@@ -26,13 +26,22 @@ while (userNum < 1 || userNum > 5){
 }
 
 const computerNum = getRndInteger(1, 5);
+console.log(computerNum);
 const sum = userNum + computerNum;
 
+if ((evenOrOdd(sum) === true && choice === 'pari') || (evenOrOdd(sum) === false && choice === 'dispari')) {
+    console.log('Hai vinto!');
+} else {
+    console.log('Hai perso..');
+} /* win or lose */
+
 function evenOrOdd(number) {
-    
-}
-
-
+    if (number % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+} /* true even, false odd of a number */
 
 function palindrome(word) {
     let wordReverse = "";    
