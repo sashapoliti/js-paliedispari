@@ -12,6 +12,10 @@ Creare una funzione per capire se la parola inserita è palindroma */
 /* const userWord = prompt('Inserisci una parola');
 
 palindrome(userWord); */
+let choice = prompt('Inserisci pari o dispari');
+while (choice !== 'pari' && choice !== 'dispari'){
+    choice = prompt('O pari o dispari, riprova');
+}
 
 let userNum = parseInt(prompt('Inserisci un numero da 1 a 5'));
 while (isNaN(userNum)){
