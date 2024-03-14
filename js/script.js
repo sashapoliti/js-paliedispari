@@ -25,6 +25,13 @@ while (userNum < 1 || userNum > 5){
     userNum = parseInt(prompt("E' più piccolo di 1 o più grande di 5, riprova"));
 }
 
+const computerNum = getRndInteger(1, 5);
+const sum = userNum + computerNum;
+
+function evenOrOdd(number) {
+    
+}
+
 
 
 function palindrome(word) {
