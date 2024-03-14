@@ -9,9 +9,9 @@ Creare una funzione per capire se la parola inserita è palindroma */
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-/* const userWord = prompt('Inserisci una parola');
+const userWord = prompt('Inserisci una parola');
 
-palindrome(userWord); */
+palindrome(userWord);
 let choice = prompt('Inserisci pari o dispari');
 while (choice !== 'pari' && choice !== 'dispari'){
     choice = prompt('O pari o dispari, riprova');
