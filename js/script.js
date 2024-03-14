@@ -2,9 +2,26 @@
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma */
 
-const userWord = prompt('Inserisci una parola');
+// Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
 
-palindrome(userWord);
+/* const userWord = prompt('Inserisci una parola');
+
+palindrome(userWord); */
+
+let userNum = parseInt(prompt('Inserisci un numero da 1 a 5'));
+while (isNaN(userNum)){
+    userNum = parseInt(prompt('Non è un numero, riprova'));
+}
+while (userNum < 1 || userNum > 5){
+    userNum = parseInt(prompt("E' più piccolo di 1 o più grande di 5, riprova"));
+}
+
+
 
 function palindrome(word) {
     let wordReverse = "";    
